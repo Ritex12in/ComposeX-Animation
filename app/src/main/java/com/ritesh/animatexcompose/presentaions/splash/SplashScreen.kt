@@ -49,6 +49,7 @@ fun SplashScreen(
     var isTextVisible by remember { mutableStateOf(false) }
     var isAnimationFinished by remember { mutableStateOf(false) }
 
+    val infiniteTransition = rememberInfiniteTransition(label = "infinite transition")
     // Logo animation controls
     val logoScale by animateFloatAsState(
         targetValue = if (isLogoVisible) 1f else 0.3f,
@@ -56,15 +57,9 @@ fun SplashScreen(
         label = "logoScale"
     )
 
-    // Continuous rotation animation for the logo
-    val infiniteTransition = rememberInfiniteTransition(label = "infiniteTransition")
-    val rotation by infiniteTransition.animateFloat(
-        initialValue = 0f,
-        targetValue = 360f,
-        animationSpec = infiniteRepeatable(
-            animation = tween(2000, easing = FastOutSlowInEasing),
-            repeatMode = RepeatMode.Restart
-        ),
+    val rotation by animateFloatAsState(
+        targetValue = if (isLogoVisible) 360f else 0f,
+        animationSpec = tween(durationMillis = 1000, easing = FastOutSlowInEasing),
         label = "rotation"
     )
 
@@ -136,7 +131,7 @@ fun SplashScreen(
                 exit = fadeOut()
             ) {
                 Text(
-                    text = "ComposeX Animation",
+                    text = "AnimateX Compose",
                     color = MaterialTheme.colorScheme.primary,
                     fontSize = 28.sp,
                     fontWeight = FontWeight.Bold,
