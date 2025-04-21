@@ -51,13 +51,13 @@ import com.ritesh.animatexcompose.presentaions.details.demos.ShimmerAnimationPre
 import com.ritesh.animatexcompose.presentaions.details.demos.SlideAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.viewmodel.DetailsUiState
 import com.ritesh.animatexcompose.presentaions.details.viewmodel.DetailsViewModel
+import com.ritesh.animatexcompose.util.Utils.openGithubLink
 import com.ritesh.animatexcompose.util.Utils.shareAnimation
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DetailsScreen(
     onNavigateBack: () -> Unit,
-    onNavigateToCode: (Int) -> Unit,
     viewModel: DetailsViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -173,7 +173,7 @@ fun DetailsScreen(
                                 Text(text = "Share")
                             }
 
-                            Button(onClick = { onNavigateToCode(state.animation.id) }) {
+                            Button(onClick = { openGithubLink(context, state.animation.gitHubLink) }) {
                                 Icon(
                                     imageVector = ImageVector.vectorResource(R.drawable.baseline_code_24),
                                     contentDescription = "View Code",

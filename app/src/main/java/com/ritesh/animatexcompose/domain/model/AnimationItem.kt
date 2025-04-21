@@ -6,5 +6,5 @@ data class AnimationItem(
     val description: String,
     val previewTitle: String,
     val animationType: AnimationType,
-    val codeSnippet: String
+    val gitHubLink: String
 )

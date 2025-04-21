@@ -9,7 +9,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.ritesh.animatexcompose.presentaions.code.screen.CodeScreen
 import com.ritesh.animatexcompose.presentaions.details.screen.DetailsScreen
 import com.ritesh.animatexcompose.presentaions.home.screen.HomeScreen
 import com.ritesh.animatexcompose.presentaions.onboarding.screen.OnboardingScreen
@@ -57,22 +56,6 @@ fun AnimateXApp(
             )
         ) {
             DetailsScreen(
-                onNavigateBack = {
-                    navController.popBackStack()
-                },
-                onNavigateToCode = { animationId->
-                    navController.navigate("code/$animationId")
-                }
-            )
-        }
-
-        composable(
-            route = "code/{animationId}",
-            arguments = listOf(
-                navArgument("animationId") { type = NavType.IntType }
-            )
-            ) {
-            CodeScreen(
                 onNavigateBack = {
                     navController.popBackStack()
                 }
