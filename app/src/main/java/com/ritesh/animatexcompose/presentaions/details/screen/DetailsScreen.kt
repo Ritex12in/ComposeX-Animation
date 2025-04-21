@@ -43,6 +43,7 @@ import com.ritesh.animatexcompose.R
 import com.ritesh.animatexcompose.domain.model.AnimationType
 import com.ritesh.animatexcompose.presentaions.details.demos.BounceAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ColorChangeAnimationPreview
+import com.ritesh.animatexcompose.presentaions.details.demos.ExpandAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.FadeAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.PulseAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.RotateAnimationPreview
@@ -214,5 +215,6 @@ fun AnimationPreview(animationType: AnimationType) {
         AnimationType.SHIMMER -> ShimmerAnimationPreview()
         AnimationType.BOUNCE -> BounceAnimationPreview()
         AnimationType.PULSE -> PulseAnimationPreview()
+        AnimationType.EXPAND -> ExpandAnimationPreview()
     }
 }

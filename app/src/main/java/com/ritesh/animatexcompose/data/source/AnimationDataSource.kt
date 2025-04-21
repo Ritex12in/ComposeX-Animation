@@ -71,6 +71,14 @@ class AnimationDataSource {
             previewTitle = "Pulsing Element",
             animationType = AnimationType.PULSE,
             gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/PulseAnimationPreview.kt"
+        ),
+        AnimationItem(
+            id = 9,
+            title = "Expand Animation",
+            description = "An expanding effect that smoothly reveals hidden content or UI elements. Expand animations are ideal for dropdowns, accordions, and section transitions, enhancing the sense of hierarchy and flow in the interface.",
+            previewTitle = "Expanding Element",
+            animationType = AnimationType.EXPAND,
+            gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/ExpandAnimationPreview.kt"
         )
     )
 

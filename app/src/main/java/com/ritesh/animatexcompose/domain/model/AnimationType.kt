@@ -8,5 +8,6 @@ enum class AnimationType {
     COLOR_CHANGE,
     SHIMMER,
     BOUNCE,
-    PULSE
+    PULSE,
+    EXPAND
 }
