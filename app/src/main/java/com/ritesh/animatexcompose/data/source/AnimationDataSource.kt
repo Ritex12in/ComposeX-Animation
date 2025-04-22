@@ -79,6 +79,15 @@ class AnimationDataSource {
             previewTitle = "Expanding Element",
             animationType = AnimationType.EXPAND,
             gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/ExpandAnimationPreview.kt"
+        ),
+        AnimationItem(
+            id = 10,
+            title = "Splash Animation",
+            description = "A splash screen animation featuring a shrinking app logo paired with a linear progress bar. This effect " +
+                    "creates a polished entry point for the app, subtly drawing attention to branding while indicating loading progress. Ideal for establishing visual rhythm and preparing users for a smooth transition into the main interface.",
+            previewTitle = "Splash Animation",
+            animationType = AnimationType.SPLASH,
+            gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/Splash1AnimationPreview.kt"
         )
     )
 

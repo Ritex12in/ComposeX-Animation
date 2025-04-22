@@ -50,6 +50,7 @@ import com.ritesh.animatexcompose.presentaions.details.demos.RotateAnimationPrev
 import com.ritesh.animatexcompose.presentaions.details.demos.ScaleAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ShimmerAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.SlideAnimationPreview
+import com.ritesh.animatexcompose.presentaions.details.demos.Splash1AnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.viewmodel.DetailsUiState
 import com.ritesh.animatexcompose.presentaions.details.viewmodel.DetailsViewModel
 import com.ritesh.animatexcompose.util.Utils.openGithubLink
@@ -216,5 +217,6 @@ fun AnimationPreview(animationType: AnimationType) {
         AnimationType.BOUNCE -> BounceAnimationPreview()
         AnimationType.PULSE -> PulseAnimationPreview()
         AnimationType.EXPAND -> ExpandAnimationPreview()
+        AnimationType.SPLASH -> Splash1AnimationPreview()
     }
 }

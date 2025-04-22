@@ -9,5 +9,6 @@ enum class AnimationType {
     SHIMMER,
     BOUNCE,
     PULSE,
-    EXPAND
+    EXPAND,
+    SPLASH
 }

@@ -146,7 +146,8 @@ fun AnimationCard(
                 AnimationType.SHIMMER -> MaterialTheme.colorScheme.surfaceVariant
                 AnimationType.BOUNCE -> MaterialTheme.colorScheme.secondaryContainer
                 AnimationType.PULSE -> MaterialTheme.colorScheme.errorContainer
-                AnimationType.EXPAND -> MaterialTheme.colorScheme.primary
+                AnimationType.EXPAND -> MaterialTheme.colorScheme.outline
+                AnimationType.SPLASH -> MaterialTheme.colorScheme.onPrimaryContainer
             }
 
             Box(
