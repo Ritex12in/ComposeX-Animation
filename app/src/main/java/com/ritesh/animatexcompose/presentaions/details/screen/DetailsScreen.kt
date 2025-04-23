@@ -45,6 +45,7 @@ import com.ritesh.animatexcompose.presentaions.details.demos.BounceAnimationPrev
 import com.ritesh.animatexcompose.presentaions.details.demos.ColorChangeAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ExpandAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.FadeAnimationPreview
+import com.ritesh.animatexcompose.presentaions.details.demos.Loader1AnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.PulseAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.RotateAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ScaleAnimationPreview
@@ -218,5 +219,6 @@ fun AnimationPreview(animationType: AnimationType) {
         AnimationType.PULSE -> PulseAnimationPreview()
         AnimationType.EXPAND -> ExpandAnimationPreview()
         AnimationType.SPLASH -> Splash1AnimationPreview()
+        AnimationType.LOADER -> Loader1AnimationPreview()
     }
 }

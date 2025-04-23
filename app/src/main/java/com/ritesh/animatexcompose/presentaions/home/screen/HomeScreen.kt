@@ -148,6 +148,7 @@ fun AnimationCard(
                 AnimationType.PULSE -> MaterialTheme.colorScheme.errorContainer
                 AnimationType.EXPAND -> MaterialTheme.colorScheme.outline
                 AnimationType.SPLASH -> MaterialTheme.colorScheme.onPrimaryContainer
+                AnimationType.LOADER -> MaterialTheme.colorScheme.onSurface
             }
 
             Box(

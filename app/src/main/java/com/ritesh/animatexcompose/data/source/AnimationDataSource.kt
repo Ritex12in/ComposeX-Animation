@@ -88,6 +88,14 @@ class AnimationDataSource {
             previewTitle = "Splash Animation",
             animationType = AnimationType.SPLASH,
             gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/Splash1AnimationPreview.kt"
+        ),
+        AnimationItem(
+            id = 11,
+            title = "Loader Animation",
+            description = "This composable creates a colorful, rotating loader animation made of two circular arcs that rotate in opposite directions while smoothly transitioning colors through a set of predefined hues.",
+            previewTitle = "Loader Animation",
+            animationType = AnimationType.LOADER,
+            gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/Loader1AnimationPreview.kt"
         )
     )
 
