@@ -91,11 +91,20 @@ class AnimationDataSource {
         ),
         AnimationItem(
             id = 11,
-            title = "Loader Animation",
+            title = "Loader1 Animation",
             description = "This composable creates a colorful, rotating loader animation made of two circular arcs that rotate in opposite directions while smoothly transitioning colors through a set of predefined hues.",
             previewTitle = "Loader Animation",
             animationType = AnimationType.LOADER,
             gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/Loader1AnimationPreview.kt"
+        ),
+        AnimationItem(
+            id = 12,
+            title = "Loader2 Animation",
+            description = "A sleek, animated spiral that continuously rotates like a spinning thread. It’s created using polar " +
+                    "coordinates and drawn with a Canvas, making it perfect for creative or modern loading indicators. Fully customizable with color, size, and spiral turns, this loader adds a stylish touch to any Compose UI.",
+            previewTitle = "Loader Animation",
+            animationType = AnimationType.LOADER,
+            gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/Loader2AnimationPreview.kt"
         )
     )
 

@@ -128,7 +128,7 @@ fun AnimationCard(
             .fillMaxWidth()
             .height(160.dp),
         elevation = CardDefaults.cardElevation(
-            defaultElevation = 4.dp
+            defaultElevation = 8.dp
         ),
         shape = MaterialTheme.shapes.medium
     ) {

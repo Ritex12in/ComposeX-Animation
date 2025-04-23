@@ -46,6 +46,7 @@ import com.ritesh.animatexcompose.presentaions.details.demos.ColorChangeAnimatio
 import com.ritesh.animatexcompose.presentaions.details.demos.ExpandAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.FadeAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.Loader1AnimationPreview
+import com.ritesh.animatexcompose.presentaions.details.demos.Loader2AnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.PulseAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.RotateAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ScaleAnimationPreview
@@ -136,7 +137,7 @@ fun DetailsScreen(
                                 modifier = Modifier.fillMaxSize(),
                                 contentAlignment = Alignment.Center
                             ) {
-                                AnimationPreview(state.animation.animationType)
+                                AnimationPreview(state.animation.id)
                             }
                         }
 
@@ -207,18 +208,19 @@ fun DetailsScreen(
 }
 
 @Composable
-fun AnimationPreview(animationType: AnimationType) {
-    when (animationType) {
-        AnimationType.FADE -> FadeAnimationPreview()
-        AnimationType.SCALE -> ScaleAnimationPreview()
-        AnimationType.ROTATE -> RotateAnimationPreview()
-        AnimationType.SLIDE -> SlideAnimationPreview()
-        AnimationType.COLOR_CHANGE -> ColorChangeAnimationPreview()
-        AnimationType.SHIMMER -> ShimmerAnimationPreview()
-        AnimationType.BOUNCE -> BounceAnimationPreview()
-        AnimationType.PULSE -> PulseAnimationPreview()
-        AnimationType.EXPAND -> ExpandAnimationPreview()
-        AnimationType.SPLASH -> Splash1AnimationPreview()
-        AnimationType.LOADER -> Loader1AnimationPreview()
+fun AnimationPreview(id: Int) {
+    when (id) {
+        1 -> FadeAnimationPreview()
+        2 -> ScaleAnimationPreview()
+        3 -> RotateAnimationPreview()
+        4 -> SlideAnimationPreview()
+        5 -> ColorChangeAnimationPreview()
+        6 -> ShimmerAnimationPreview()
+        7 -> BounceAnimationPreview()
+        8 -> PulseAnimationPreview()
+        9 -> ExpandAnimationPreview()
+        10 -> Splash1AnimationPreview()
+        11 -> Loader1AnimationPreview()
+        12-> Loader2AnimationPreview()
     }
 }
