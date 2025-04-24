@@ -40,7 +40,6 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.ritesh.animatexcompose.R
-import com.ritesh.animatexcompose.domain.model.AnimationType
 import com.ritesh.animatexcompose.presentaions.details.demos.BounceAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ColorChangeAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ExpandAnimationPreview
