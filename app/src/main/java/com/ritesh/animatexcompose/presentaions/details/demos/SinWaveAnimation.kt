@@ -7,12 +7,12 @@ import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -20,18 +20,28 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.ritesh.animatexcompose.presentaions.ui.theme.AnimateXComposeTheme
 import kotlin.math.PI
 import kotlin.math.sin
 
-/*
- * StandingWave.kt
- * Shows an endless sine wave whose phase shifts over time so that every point
- * moves up & down (wave propagation) while the line itself stays fully drawn.
- */
+@Composable
+fun SinWaveAnimation() {
+    Box(
+        modifier = Modifier.fillMaxSize()
+    ) {
+        StandingWave(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(200.dp)
+                .padding(16.dp),
+            waveColor = Color.Cyan,
+            strokeWidth = 4.dp,
+            cycles = 2,
+            durationMs = 1500
+        )
+    }
+}
 @Composable
 fun StandingWave(
     modifier: Modifier = Modifier,
@@ -74,25 +84,5 @@ fun StandingWave(
             color = waveColor,
             style = Stroke(strokeWidth.toPx(), cap = StrokeCap.Round)
         )
-    }
-}
-
-
-@Preview(showBackground = true)
-@Composable
-private fun SinPrev() {
-    AnimateXComposeTheme {
-        Surface(Modifier.fillMaxSize()) {
-            StandingWave(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(200.dp)
-                    .padding(16.dp),
-                waveColor = Color.Cyan,
-                strokeWidth = 4.dp,
-                cycles = 2,
-                durationMs = 1500
-            )
-        }
     }
 }

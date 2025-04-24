@@ -11,5 +11,6 @@ enum class AnimationType {
     PULSE,
     EXPAND,
     SPLASH,
-    LOADER
+    LOADER,
+    RANDOM
 }

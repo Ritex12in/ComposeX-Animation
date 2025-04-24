@@ -50,6 +50,8 @@ import com.ritesh.animatexcompose.presentaions.details.demos.PulseAnimationPrevi
 import com.ritesh.animatexcompose.presentaions.details.demos.RotateAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ScaleAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ShimmerAnimationPreview
+import com.ritesh.animatexcompose.presentaions.details.demos.SinWave2Animation
+import com.ritesh.animatexcompose.presentaions.details.demos.SinWaveAnimation
 import com.ritesh.animatexcompose.presentaions.details.demos.SlideAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.Splash1AnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.viewmodel.DetailsUiState
@@ -220,6 +222,8 @@ fun AnimationPreview(id: Int) {
         9 -> ExpandAnimationPreview()
         10 -> Splash1AnimationPreview()
         11 -> Loader1AnimationPreview()
-        12-> Loader2AnimationPreview()
+        12 -> Loader2AnimationPreview()
+        13 -> SinWaveAnimation()
+        14 -> SinWave2Animation()
     }
 }

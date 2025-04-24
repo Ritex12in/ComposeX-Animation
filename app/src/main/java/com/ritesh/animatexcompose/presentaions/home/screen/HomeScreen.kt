@@ -149,6 +149,7 @@ fun AnimationCard(
                 AnimationType.EXPAND -> MaterialTheme.colorScheme.outline
                 AnimationType.SPLASH -> MaterialTheme.colorScheme.onPrimaryContainer
                 AnimationType.LOADER -> MaterialTheme.colorScheme.onSurface
+                AnimationType.RANDOM -> MaterialTheme.colorScheme.onError
             }
 
             Box(

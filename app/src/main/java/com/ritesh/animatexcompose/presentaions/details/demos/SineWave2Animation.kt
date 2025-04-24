@@ -8,28 +8,39 @@ import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.ritesh.animatexcompose.presentaions.ui.theme.AnimateXComposeTheme
 import kotlin.math.PI
 import kotlin.math.sin
 
 @Composable
-fun SineWaveWithBallVariableSpeed(
+fun SinWave2Animation() {
+    Box(
+        modifier = Modifier.fillMaxSize()
+    ){
+        SineWaveWithBall(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(180.dp),
+            cycles = 3,
+            travelDurationMs = 2500
+        )
+    }
+}
+@Composable
+fun SineWaveWithBall(
     modifier: Modifier = Modifier,
     waveColor: Color = MaterialTheme.colorScheme.primary,
     waveStroke: Dp = 3.dp,
@@ -78,24 +89,5 @@ fun SineWaveWithBallVariableSpeed(
         val ballY = midY - amplitude * sin(angle).toFloat()
 
         drawCircle(ballColor, ballRadius.toPx(), Offset(ballX, ballY))
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-private fun SinBallPrev() {
-    AnimateXComposeTheme {
-        Box(
-            modifier = Modifier.fillMaxWidth().padding(16.dp),
-            contentAlignment = Alignment.Center
-        ) {
-            SineWaveWithBallVariableSpeed(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(180.dp),
-                cycles = 3,
-                travelDurationMs = 2500
-            )
-        }
     }
 }
