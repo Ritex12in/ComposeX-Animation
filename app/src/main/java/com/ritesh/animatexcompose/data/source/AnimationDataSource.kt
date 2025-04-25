@@ -113,7 +113,7 @@ class AnimationDataSource {
                     "rise and fall in place—like a rope fixed at both ends and vibrating. The result is a smooth, endlessly looping “wiggling” waveform that stays fully drawn yet appears alive as crests and troughs oscillate vertically.",
             previewTitle = "Sin Wave",
             animationType = AnimationType.RANDOM,
-            gitHubLink = ""
+            gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/SinWaveAnimation.kt"
         ),
         AnimationItem(
             id = 14,
@@ -121,7 +121,7 @@ class AnimationDataSource {
             description = "A cyan sine wave stretches across the view, and a magenta ball rides its surface: it eases up each crest, accelerates down each slope, and loops back to start—showcasing synchronized motion and variable speed on a single, endless path.",
             previewTitle = "Sin Wave Ball Animation",
             animationType = AnimationType.RANDOM,
-            gitHubLink = ""
+            gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/SineWave2Animation.kt"
         )
     )
 
