@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.sp
 import com.ritesh.animatexcompose.presentaions.ui.theme.AnimateXComposeTheme
 
 @Composable
-fun FlipCardDemo() {
+fun FlipAnimationPreview() {
     var isFlipped by remember { mutableStateOf(false) }
     val rotation = animateFloatAsState(
         targetValue = if (isFlipped) 180f else 0f,
@@ -37,12 +37,12 @@ fun FlipCardDemo() {
     )
 
     Column(
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.fillMaxSize()
     ) {
         Box(
             modifier = Modifier
                 .padding(16.dp)
-                .fillMaxSize()
                 .graphicsLayer {
                     rotationY = rotation.value
                     cameraDistance = 12 * density
@@ -73,7 +73,7 @@ fun FlipCardDemo() {
 fun FrontCard() {
     Box(
         modifier = Modifier
-            .fillMaxSize()
+            .size(200.dp)
             .background(Color.Cyan),
         contentAlignment = Alignment.Center
     ) {
@@ -85,7 +85,7 @@ fun FrontCard() {
 fun BackCard() {
     Box(
         modifier = Modifier
-            .fillMaxSize()
+            .size(200.dp)
             .background(Color.Magenta),
         contentAlignment = Alignment.Center
     ) {

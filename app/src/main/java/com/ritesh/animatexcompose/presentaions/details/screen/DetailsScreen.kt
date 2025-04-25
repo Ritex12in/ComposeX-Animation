@@ -44,11 +44,13 @@ import com.ritesh.animatexcompose.presentaions.details.demos.BounceAnimationPrev
 import com.ritesh.animatexcompose.presentaions.details.demos.ColorChangeAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ExpandAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.FadeAnimationPreview
+import com.ritesh.animatexcompose.presentaions.details.demos.FlipAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.Loader1AnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.Loader2AnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.PulseAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.RotateAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.ScaleAnimationPreview
+import com.ritesh.animatexcompose.presentaions.details.demos.ShapeMorphingAnimation
 import com.ritesh.animatexcompose.presentaions.details.demos.ShimmerAnimationPreview
 import com.ritesh.animatexcompose.presentaions.details.demos.SinWave2Animation
 import com.ritesh.animatexcompose.presentaions.details.demos.SinWaveAnimation
@@ -225,5 +227,7 @@ fun AnimationPreview(id: Int) {
         12 -> Loader2AnimationPreview()
         13 -> SinWaveAnimation()
         14 -> SinWave2Animation()
+        15 -> FlipAnimationPreview()
+        16 -> ShapeMorphingAnimation()
     }
 }

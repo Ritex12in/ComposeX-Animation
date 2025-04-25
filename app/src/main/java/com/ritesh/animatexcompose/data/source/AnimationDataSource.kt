@@ -122,6 +122,24 @@ class AnimationDataSource {
             previewTitle = "Sin Wave Ball Animation",
             animationType = AnimationType.RANDOM,
             gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/SineWave2Animation.kt"
+        ),
+        AnimationItem(
+            id = 15,
+            title = "Flip Animation",
+            description = "The Flip Animation creates a smooth 3D-like transition where a composable appears to " +
+                    "rotate around its vertical or horizontal axis, mimicking the effect of flipping a card. This animation is often used for revealing hidden content—like showing the back of a card when tapped.",
+            previewTitle = "Card Flip",
+            animationType = AnimationType.FLIP,
+            gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/FlipAnimationPreview.kt"
+        ),
+        AnimationItem(
+            id = 16,
+            title = "Shape Morphing",
+            description = "The Shape Morphing Animation visually transforms one geometric shape into another (e.g., circle → square → hexagon) through smooth, continuous interpolation. " +
+                    "This type of animation brings life to UI elements, adding a sense of motion, fluidity, and engagement.",
+            previewTitle = "Shape Morphing Animation",
+            animationType = AnimationType.MORPH,
+            gitHubLink = "https://github.com/Ritex12in/ComposeX-Animation/blob/main/app/src/main/java/com/ritesh/animatexcompose/presentaions/details/demos/ShapeMorphingAnimation.kt"
         )
     )
 

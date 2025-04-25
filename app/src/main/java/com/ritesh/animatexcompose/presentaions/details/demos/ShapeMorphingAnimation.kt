@@ -59,7 +59,7 @@ fun ShapeMorphingAnimation() {
         // Canvas for the shape
         Surface(
             modifier = Modifier
-                .size(300.dp)
+                .size(200.dp)
                 .padding(16.dp),
             shape = MaterialTheme.shapes.medium
         ) {

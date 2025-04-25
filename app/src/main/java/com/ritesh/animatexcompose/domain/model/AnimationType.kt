@@ -12,5 +12,7 @@ enum class AnimationType {
     EXPAND,
     SPLASH,
     LOADER,
+    FLIP,
+    MORPH,
     RANDOM
 }
