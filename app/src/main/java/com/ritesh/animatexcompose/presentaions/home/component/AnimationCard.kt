@@ -31,8 +31,8 @@ fun AnimationCard(
     onItemClick: (AnimationItem) -> Unit
 ) {
     val cardColor = when (animation.animationType) {
-        AnimationType.FADE -> Color(0xFF00BF63)
-        AnimationType.SCALE -> Color(0xFFF85646)
+        AnimationType.FADE -> Color(0xFFe07a5f)
+        AnimationType.SCALE -> Color(0xFFc9ada7)
         AnimationType.ROTATE -> Color(0xFF672FD7)
         AnimationType.SLIDE -> Color(0xFF72c7d0)
         AnimationType.COLOR_CHANGE -> Color(0xFFe0b0a4)
@@ -43,7 +43,7 @@ fun AnimationCard(
         AnimationType.SPLASH -> Color(0xFF8da9c4)
         AnimationType.LOADER -> Color(0xFFc4bca9)
         AnimationType.RANDOM -> Color(0xFF3772ff)
-        AnimationType.FLIP -> Color(0xFF2afc98)
+        AnimationType.FLIP -> Color(0xFFa7c957)
         AnimationType.MORPH -> Color(0xFF6ccff6)
     }
     val icon = when(animation.animationType){
@@ -54,6 +54,12 @@ fun AnimationCard(
         AnimationType.COLOR_CHANGE -> R.drawable.color_change
         AnimationType.BOUNCE -> R.drawable.bounce
         AnimationType.PULSE -> R.drawable.pulse
+        AnimationType.EXPAND -> R.drawable.expand
+        AnimationType.SPLASH -> R.drawable.splash
+        AnimationType.LOADER -> R.drawable.loading
+        AnimationType.RANDOM -> R.drawable.random
+        AnimationType.FLIP -> R.drawable.flip
+        AnimationType.MORPH -> R.drawable.morphic
         else -> R.drawable.baseline_animation_24
     }
     Card(
