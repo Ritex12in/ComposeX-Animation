@@ -32,7 +32,7 @@ fun AnimationCard(
 ) {
     val cardColor = when (animation.animationType) {
         AnimationType.FADE -> Color(0xFF00BF63)
-        AnimationType.SCALE -> MaterialTheme.colorScheme.secondary
+        AnimationType.SCALE -> Color(0xFFF85646)
         AnimationType.ROTATE -> Color(0xFF672FD7)
         AnimationType.SLIDE -> Color(0xFF72c7d0)
         AnimationType.COLOR_CHANGE -> Color(0xFFe0b0a4)
@@ -49,6 +49,11 @@ fun AnimationCard(
     val icon = when(animation.animationType){
         AnimationType.FADE -> R.drawable.fade
         AnimationType.ROTATE -> R.drawable.rotate
+        AnimationType.SCALE -> R.drawable.scale
+        AnimationType.SLIDE -> R.drawable.slide
+        AnimationType.COLOR_CHANGE -> R.drawable.color_change
+        AnimationType.BOUNCE -> R.drawable.bounce
+        AnimationType.PULSE -> R.drawable.pulse
         else -> R.drawable.baseline_animation_24
     }
     Card(
