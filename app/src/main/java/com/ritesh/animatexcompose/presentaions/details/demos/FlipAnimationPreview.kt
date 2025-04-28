@@ -22,10 +22,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.ritesh.animatexcompose.presentaions.ui.theme.AnimateXComposeTheme
 
 @Composable
 fun FlipAnimationPreview() {
@@ -61,7 +59,7 @@ fun FlipAnimationPreview() {
                 }
             }
         }
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(20.dp))
 
         Button(onClick = { isFlipped = !isFlipped }) {
             Text(text = "Flip")

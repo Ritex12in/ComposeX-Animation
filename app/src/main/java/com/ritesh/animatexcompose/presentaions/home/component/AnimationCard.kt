@@ -27,25 +27,10 @@ import com.ritesh.animatexcompose.domain.model.AnimationType
 
 @Composable
 fun AnimationCard(
+    index: Int,
     animation: AnimationItem,
     onItemClick: (AnimationItem) -> Unit
 ) {
-    val cardColor = when (animation.animationType) {
-        AnimationType.FADE -> Color(0xFFe07a5f)
-        AnimationType.SCALE -> Color(0xFFc9ada7)
-        AnimationType.ROTATE -> Color(0xFF672FD7)
-        AnimationType.SLIDE -> Color(0xFF72c7d0)
-        AnimationType.COLOR_CHANGE -> Color(0xFFe0b0a4)
-        AnimationType.SHIMMER -> Color(0xFFd7a3b7)
-        AnimationType.BOUNCE -> Color(0xFFd8789e)
-        AnimationType.PULSE -> Color(0xFFae6873)
-        AnimationType.EXPAND -> Color(0xFFae6873)
-        AnimationType.SPLASH -> Color(0xFF8da9c4)
-        AnimationType.LOADER -> Color(0xFFc4bca9)
-        AnimationType.RANDOM -> Color(0xFF3772ff)
-        AnimationType.FLIP -> Color(0xFFa7c957)
-        AnimationType.MORPH -> Color(0xFF6ccff6)
-    }
     val icon = when(animation.animationType){
         AnimationType.FADE -> R.drawable.fade
         AnimationType.ROTATE -> R.drawable.rotate
@@ -71,7 +56,11 @@ fun AnimationCard(
             defaultElevation = 12.dp
         ),
         colors = CardDefaults.cardColors(
-            containerColor = cardColor
+            containerColor = if ((index%4==0) || (index+1)%4==0){
+                Color(0xFFe07a5f)
+            }else{
+                Color(0xFFa7c957)
+            }
         )
     ) {
         Column(
